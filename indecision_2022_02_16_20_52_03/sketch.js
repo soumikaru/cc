@@ -63,9 +63,9 @@ function setup() {
 
 function draw() {
   background('rgba(0%,70%,45%,0.2)') 
-  noFill();               // no fill
+  noFill();           
   stroke(200, 214, 10);      
-  strokeWeight(w(0.003)); // light stroke weight(255);
+  strokeWeight(w(0.003)); 
 
   for(let radius = 0.05; radius < 0.8; radius += 0.008) {
     const circle = makeCircle(30, radius);
@@ -76,6 +76,6 @@ function draw() {
     distortedCircle.forEach(point => {
       vertex(w(point[0]), h(point[1]));
     });
-    endShape(CLOSE); // CLOSE because the last point is not the first point
+    endShape(CLOSE);
   }
 }
